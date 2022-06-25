@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    background-image: url("/images/bckg.png");
+    background-image: url("/pc-generator/images/bckg.png");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
