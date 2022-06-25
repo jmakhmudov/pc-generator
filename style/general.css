@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    background-image: url("/images/bckg.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.purple-btn {
+    color: white;
+    background: #7B61FF;
+    padding: 2% 6%;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    transition: 0.15s;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.144);
+}
+
+.purple-btn:hover {
+    background: #846df8;
+}
+
+.select-btn {
+    width: 16vw;
+    height: 16.5vh;
+    border: 0.2vw solid #DDDDDD;
+    background: none;
+    border-radius: 2vw;
+    color: #DDDDDD;
+    font-size: 2vw;
+    font-weight: 700;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.select-btn:hover,
+.select-btn:focus {
+    border-color: #7B61FF;
+    color: #7B61FF;
+}
+
+.next-button {
+    text-decoration: none;
+    opacity: 0.4;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.next-button img {
+    margin-left: 10px;
+}
+
+.next-button:hover {
+    opacity: 1;
+}
+
+@media(max-width: 700px) {
+    .purple-btn {
+        font-size: 5vw;
+    }
+}

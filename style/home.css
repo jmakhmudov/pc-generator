@@ -1,0 +1,139 @@
+.text-box h1 {
+    font-size: 7vw;
+    font-weight: 900;
+}
+
+.text-box span {
+    color: #7B61FF;
+}
+
+.text-box p {
+    color: black;
+    font-size: 1.5vw;
+    margin-bottom: 5vh;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.hero-img {
+    display: none;
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.generator {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    position: relative;
+}
+
+.generator h1 {
+    font-size: 4vw;
+    font-weight: 900;
+    text-align: center;
+    width: 40vw;
+    margin-bottom: 10vh;
+}
+
+.generator h1 span {
+    color: #7B61FF;
+}
+
+.device-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8vw;
+}
+
+.generator .next-button {
+    position: absolute;
+    bottom: -80px;
+    right: 6%;
+}
+
+.range-slider {
+    display: flex;
+    width: 100vw;
+    padding: 2% 6%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.range-slider p {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.range-slider span {
+    color: #7B61FF;
+}
+
+.range-slider input { 
+    margin-top: 5vh;
+    flex: 1;
+    width: 50vw;
+    background: #ffffff;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+@media(max-width: 700px) {
+    .hero-img {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .hero-box {
+        margin-top: 10vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+    .text-box h1 {
+        font-size: 15vw;
+        font-weight: 900;
+        color: #7B61FF;
+    }
+
+    .text-box span {
+        color: black;
+    }
+
+    .text-box p {
+        color: black;
+        font-size: 3vw;
+        margin-bottom: 5vh;
+        width: 50vw;
+    }
+}
+

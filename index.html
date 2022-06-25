@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>PC Generator</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/shortcut.png">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/home.css">
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+
+        <section class="home">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/shortcut.png">
+                        <p><span>GEN</span>COMP</p>
+                    </a>
+                </div>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a onclick="window.scrollTo(0, 700)">Generator</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+
+            <div class="hero-box">
+                <div class="text-box">
+                    <h1><span>Find</span>. Get. Use.</h1>
+                    <p>Find what you have been looking for - a computer.</p>
+                    <a class="purple-btn" href="">Find It</a>
+                </div>
+
+                <div class="hero-img-box">
+                    <img style="display: block;" class="hero-img fade" src="images/laptop.png">
+                    <img class="hero-img fade" src="images/pc-hero.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="generator">
+            <h1>Choose your <span>budget</span> and <span>device</span>.</h1>
+
+            <div class="range-slider">
+                <p><span id="priceValue">550</span> $</p>
+
+                <input class="budget-slider" type="range" min="500" max="4000" value="550" step="50" id="priceRange" oninput="priceSlider();">
+            </div>
+
+            <div class="device-box">
+                <button class="select-btn">PC</button>
+                <button class="select-btn">Laptop</button>
+            </div>
+
+            <a class="next-button" href="">
+                Next
+                <img src="images/arrow-right.svg">
+            </a>
+            
+        </section>
+
+        <footer>
+            <div class="footer">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/shortcut.png">
+                        <p><span>GEN</span>COMP</p>
+                    </a>
+                </div>
+                
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a onclick="window.scrollBy(0,-120)">Generator</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+                <p>All Rights Reserved</p>
+                <p>Mady by <a href="index.html">ONEGATE</a></p>
+                <p>© Copyright 2022</p>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
